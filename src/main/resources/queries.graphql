@@ -1,0 +1,26 @@
+schema {
+ query: Query
+}
+
+type Query {
+ allBooks: [Book]
+ book(id: String): Book
+ allEmployees : [Employee]
+ employee(id: String): Employee
+}
+
+type Book {
+  isn: String
+  title: String
+  publisher: String
+  authors: [String]
+  publishedYear: String
+}
+
+type Employee {
+  id: String
+  name: String
+  salary: String
+  dateOfBirth: String
+  address: String
+}
